@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div id="menuLateral">
+        <div onclick="botaomenu()"><<</div>
+        <section>
+            <div id="home"><a href="menu.html">HOME</a></div>
+            <div id="cadastro"><a href="cadastro.html">CADASTRO</a></div>
+            <div id="carrinho"><a href="carrinho.html">CARRINHO</a></div>
+        </section>
+    </div>
+    <div id="principal">
+        <header id="cabeca">
+            <div id="menu" onclick="botaomenu()"></div>
+        </header>
+        <main id="Produtos">
+            <div id="o"></div>
+        </main>
+        <footer>
+            <div>
+                <h2>NEXO KICKS</h2>
+                <p>Movimento que conecta estilo e atitude.</p>
+            </div>
+
+            <nav>
+                <a href="menu.html">Início</a>
+                <a href="menu.html">Produtos</a>
+                <a href="cadastro.html">Cadastro</a>
+            </nav>
+            <p>© 2026 NEXO KICKS — Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        
+        let produtos = []
+
+        async function carregar_json() {
+            const resposta = await fetch("produtos.json")
+            produtos = await resposta.json()
+
+            carregarImagem(produtos)        
+        }
+
+        carregar_json()
+
+        function carregarImagem() {
+
+            for (let i = 0; i < produtos.length;) {
+
+                const main = document.getElementById('Produtos');
+
+                main.innerHTML += `<section id="sequencia${i}"></section>`;
+
+                const sequencia = document.getElementById(`sequencia${i}`);
+
+                for (let j = 0; j < 10 && i < produtos.length; j++) {
+
+                    sequencia.innerHTML += `
+                        <nav class="produto" id="${i}">
+                            <img src="${produtos[i].imagem}">
+                            <p>${produtos[i].nome}</p>
+                            <p>R$${produtos[i].preco}</p>
+                            <button class="button_compra" onclick="adicionarJson(${i})"><p>Adicionar ao carrinho</p></button>
+                        </nav>
+                    `;
+
+                    i++;
+                }
+            }
+        }
+
+
+        function botaomenu(){
+            const menuLateral = document.getElementById("menuLateral")
+            const menu = document.getElementById("menu")
+            const visivel = getComputedStyle(menuLateral).display
+
+            if( visivel == "block"){
+                menuLateral.style.display = "none"
+                menu.style.display = "block"
+            }else{
+                menuLateral.style.display = "block"
+                menu.style.display = "none"
+            }
+        }          
+
+        function adicionarJson(i){
+            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
+            const existente = carrinho.find(item => item.nome === produtos[i].nome)
+            if (existente){
+                existente.quantidade++
+            } else {
+                carrinho.push({ ...produtos[i], quantidade: 1 })
+            }
+            localStorage.setItem("carrinho", JSON.stringify(carrinho))
+        }
+    </script>
+</body>
+</html>

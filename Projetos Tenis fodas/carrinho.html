@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <div id="menuLateral">
+        <div onclick="botaomenu()"><<</div>
+        <section>
+            <div id="home"><a href="menu.html">HOME</a></div>
+            <div id="cadastro"><a href="cadastro.html">CADASTRO</a></div>
+            <div id="carrinho"><a href="carrinho.html">CARRINHO</a></div>
+        </section>
+    </div>  
+    <div id="img">
+        <div id="menu" onclick="botaomenu()"></div>
+    </div>
+    </div> 
+    <div id="principal">
+        <header>
+            <header>
+                <a href="menu.html" class="logo">NEXO KICKS</a>
+                <h1>Meu carrinho <span id="contador"></span></h1>
+            </header>
+        </header>
+        <main>
+            <section id="lista_carrinho"></section>  
+
+            <section id="lista_carrinho"></section>
+            <div id="resumo">
+                <p>Total: <strong id="total">R$0,00</strong></p>
+                <button id="finalizar" onclick="finalizarCompra()">Finalizar compra</button>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <h2>NEXO KICKS</h2>
+                <p>Movimento que conecta estilo e atitude.</p>
+            </div>
+            <nav>
+                <a href="menu.html">Início</a>
+                <a href="menu.html">Produtos</a>
+                <a href="cadastro.html">Cadastro</a>
+            </nav>
+            <p>© 2026 NEXO KICKS — Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+
+        const qtd = carrinho.reduce((soma, item) => soma + item.quantidade, 0)
+document.getElementById("contador").textContent = `(${qtd} ${qtd === 1 ? "item" : "itens"})`
+
+        function botaomenu(){
+            menuLateral = document.getElementById("menuLateral")
+            menu = document.getElementById("menu")
+            visivel = getComputedStyle(menuLateral).display
+
+            if( visivel == "block"){
+                menuLateral.style.display = "none"
+                menu.style.display = "block"
+            }else{
+                menuLateral.style.display = "block"
+                menu.style.display = "none"
+            }
+        }          
+       let carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
+
+        function salvar(){
+            localStorage.setItem("carrinho", JSON.stringify(carrinho))
+        }
+
+        function alterarQuantidade(i, delta){
+            carrinho[i].quantidade += delta
+            if (carrinho[i].quantidade <= 0){
+                carrinho.splice(i, 1)  
+            }
+            salvar()
+            renderizar()
+        }
+
+        function formatar(valor){
+            return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+        }
+
+        function renderizar(){
+            const section = document.getElementById("lista_carrinho")
+            const resumo = document.getElementById("resumo")
+            section.innerHTML = ""
+
+            if (carrinho.length === 0){
+                section.innerHTML = `<p style="color:white; padding:15px">Seu carrinho está vazio.</p>`
+                resumo.style.display = "none"
+                return
+            }
+
+            resumo.style.display = "flex"
+
+            carrinho.forEach((item, i) => {
+                section.innerHTML += `
+                    <nav class="produto">
+                        <img src="${item.imagem}">
+                        <div class="texto">
+                            <p>${item.nome}</p>
+                            <p>${formatar(item.preco)}</p>
+                            <div class="quantidade">
+                                <button onclick="alterarQuantidade(${i}, -1)">−</button>
+                                <span>${item.quantidade}</span>
+                                <button onclick="alterarQuantidade(${i}, 1)">+</button>
+                            </div>
+                        </div>
+                    </nav>`
+            })
+
+            const total = carrinho.reduce((soma, item) => soma + item.preco * item.quantidade, 0)
+            document.getElementById("total").textContent = formatar(total)
+        }
+
+        function finalizarCompra(){
+            if (carrinho.length === 0) return
+            alert("Compra finalizada! Obrigado.")
+            carrinho = []
+            salvar()
+            renderizar()
+        }
+        renderizar()
+    </script>
+</body>
+</html>

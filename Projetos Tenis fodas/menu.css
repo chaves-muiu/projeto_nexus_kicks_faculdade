@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+:root{
+    --cor-terciaria: #0c0c0c;
+    --cor-principal: #f5f1e8;
+    --cor-secundaria: #f97316;
+    --cor-borda: #e5e5e5;
+    --texto: #262626;--cor-principal: 
+}
+
+* {
+    margin: 0;
+}
+
+body{
+    background-color: var(--cor-terciaria);
+    display: flex;
+}
+body > div#principal{
+    flex: 1;
+    min-width: 0;
+}
+
+header{
+    background: url("imagens/Gemini_Generated_Image_sjjmmysjjmmysjjm.jpg") center / cover no-repeat ;
+    height: clamp(200px,20vh , 600px);
+    color: wheat;
+    
+}   
+header > div#menu{
+    width: clamp(80px, 100px, 110px);
+    height: 60px;
+    justify-content: end;
+    position: fixed;
+    background: url("imagens/588a64d2d06f6719692a2d0e.png") center / contain no-repeat;
+}   
+
+div#menu {
+    margin-left: auto;
+    position: absolute;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+body > div#menuLateral{
+    width: 130px;
+    height: 100%;
+    background-color: var(--cor-secundaria);
+    flex-shrink: 0;
+    display: none;
+    position: fixed;
+}
+body > div#menuLateral > a{
+    font-size: 30px;
+
+}
+
+main{
+    margin: 5px;
+    width: 100vw;
+}
+
+main > section{
+    display: flex;
+    overflow-x: auto;
+    max-width: 100vw;
+}
+
+main > section::-webkit-scrollbar{
+    display: none;                
+}
+
+main > section > nav.produto{
+    margin: 5px;
+    background-color: var(--texto);
+    padding: 5px;
+    border-radius: 10px;
+
+    flex-direction: column  ;
+    display: flex;
+
+    height: auto;
+}
+
+nav.produto > img{
+    background-size: cover;
+    border-radius: 10px 10px 0 0 ;
+    width: clamp(210px, 17vw, 450px);
+    height: 100%;
+}
+nav > p{
+    color: #e5e5e5;
+    font-size: clamp(1rem  ,2.5em, 27px);
+}
+
+nav > button.button_compra{
+    display: flex;
+    min-height: 40px ;
+    width: 100%;
+    margin-top: auto;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #302d2d;
+
+    align-items: center;
+    justify-content: center;
+    color: #e5e5e5;
+}
+
+footer {
+    background-color: #0c0c0c;
+    color: #f5f1e8;
+    padding: 30px;
+    border-top: 2px solid #f97316;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+}
+
+footer h2 {
+    color: #f97316;
+    letter-spacing: 3px;
+}
+
+footer nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer a {
+    color: #f5f1e8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #f97316;
+}
+
+footer p {
+    font-size: 13px;
+}

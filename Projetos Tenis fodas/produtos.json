@@ -1,0 +1,372 @@
+[
+  {
+    "nome": "Air Max",
+    "preco": 699,
+    "imagem": "imagens/tenis/tenis/air-force-1.png"
+  },
+  {
+    "nome": "Air Max",
+    "preco": 499,
+    "imagem": "imagens/tenis/tenis/air-max-1.png"
+  },
+  {
+    "nome": "air max 90",
+    "preco": 554,
+    "imagem": "imagens/tenis/tenis/air-max-90.png"
+  },
+  {
+    "nome": "asics gel 1130",
+    "preco": 312,
+    "imagem": "imagens/tenis/tenis/asics-gel-1130.png"
+  },
+  {
+    "nome": "asics gel kayano14",
+    "preco": 678,
+    "imagem": "imagens/tenis/tenis/asics-gel-kayano-14.png"
+  },
+  {
+    "nome": "campus-2000s.png",
+    "preco": 659,
+    "imagem": "imagens/tenis/tenis/campus-00s.png"
+  },
+  {
+    "nome": "cortez.png",
+    "preco": 599,
+    "imagem": "imagens/tenis/tenis/cortez.png"
+  },
+  {
+    "nome": "dunk-low.png",
+    "preco": 899,
+    "imagem": "imagens/tenis/tenis/dunk-low.png"
+  },
+  {
+    "nome": "gazelle.png",
+    "preco": 699,
+    "imagem": "imagens/tenis/tenis/gazelle.png"
+  },
+  {
+    "nome": "jordan-1.png",
+    "preco": 1199,
+    "imagem": "imagens/tenis/tenis/jordan-1.png"
+  },
+  {
+    "nome": "jordan-4.png",
+    "preco": 1499,
+    "imagem": "imagens/tenis/tenis/jordan-4.png"
+  },
+  {
+    "nome": "nb-530.png",
+    "preco": 649,
+    "imagem": "imagens/tenis/tenis/nb-530.png"
+  },
+  {
+    "nome": "nb-550.png",
+    "preco": 799,
+    "imagem": "imagens/tenis/tenis/nb-550.png"
+  },
+  {
+    "nome": "nb-9060.png",
+    "preco": 999,
+    "imagem": "imagens/tenis/tenis/nb-9060.png"
+  },
+  {
+    "nome": "old-skool.png",
+    "preco": 449,
+    "imagem": "imagens/tenis/tenis/old-skool.png"
+  },
+  {
+    "nome": "samba.png",
+    "preco": 699,
+    "imagem": "imagens/tenis/tenis/samba.png"
+  },
+  {
+    "nome": "speedcat.png",
+    "preco": 549,
+    "imagem": "imagens/tenis/tenis/speedcat.png"
+  },
+  {
+    "nome": "suede-classic.png",
+    "preco": 399,
+    "imagem": "imagens/tenis/tenis/suede-classic.png"
+  },
+  {
+    "nome": "superstar.png",
+    "preco": 599,
+    "imagem": "imagens/tenis/tenis/superstar.png"
+  },
+  {
+    "nome": "air-force-1",
+    "preco": 699,
+    "imagem": "imagens/tenis/tenis/air-force-1.png"
+  },
+  {
+    "nome": "air-max-97",
+    "preco": 749,
+    "imagem": "imagens/tenis/tenis/air-max-97.png"
+  },
+  {
+    "nome": "air-max-plus-tn",
+    "preco": 899,
+    "imagem": "imagens/tenis/tenis/air-max-plus-tn.png"
+  },
+  {
+    "nome": "air-max-270",
+    "preco": 799,
+    "imagem": "imagens/tenis/tenis/air-max-270.png"
+  },
+  {
+    "nome": "stan-smith",
+    "preco": 549,
+    "imagem": "imagens/tenis/tenis/stan-smith.png"
+  },
+  {
+    "nome": "handball-spezial",
+    "preco": 599,
+    "imagem": "imagens/tenis/tenis/handball-spezial.png"
+  },
+  {
+    "nome": "forum-low",
+    "preco": 649,
+    "imagem": "imagens/tenis/tenis/forum-low.png"
+  },
+  {
+    "nome": "sl-72",
+    "preco": 599,
+    "imagem": "imagens/tenis/tenis/sl-72.png"
+  },
+  {
+    "nome": "air-jordan-3",
+    "preco": 1399,
+    "imagem": "imagens/tenis/tenis/air-jordan-3.png"
+  },
+  {
+    "nome": "air-jordan-11",
+    "preco": 1599,
+    "imagem": "imagens/tenis/tenis/air-jordan-11.png"
+  },
+  {
+    "nome": "blazer-mid-77",
+    "preco": 649,
+    "imagem": "imagens/tenis/tenis/blazer-mid-77.png"
+  },
+  {
+    "nome": "p-6000",
+    "preco": 599,
+    "imagem": "imagens/tenis/tenis/p-6000.png"
+  },
+  {
+    "nome": "adidas-glum-low",
+    "preco": 549,
+    "imagem": "imagens/tenis/tenis/adidas-glum-low.png"
+  },
+  {
+    "nome": "ultraboost-light",
+    "preco": 999,
+    "imagem": "imagens/tenis/tenis/ultraboost-light.png"
+  },
+  {
+    "nome": "yeezy-boost-350v2",
+    "preco": 1299,
+    "imagem": "imagens/tenis/tenis/yeezy-boost-350-v2.png"
+  },
+  {
+    "nome": "yeezy-foam-runner",
+    "preco": 899,
+    "imagem": "imagens/tenis/tenis/yeezy-foam-runner.png"
+  },
+  {
+    "nome": "v2k-run",
+    "preco": 699,
+    "imagem": "imagens/tenis/tenis/v2k-run.png"
+  },
+  {
+    "nome": "zoom-vomero-5",
+    "preco": 849,
+    "imagem": "imagens/tenis/tenis/zoom-vomero-5.png"
+  },
+  {
+    "nome": "shox-tl",
+    "preco": 899,
+    "imagem": "imagens/tenis/tenis/shox-tl.png"
+  },
+  {
+    "nome": "pegasus-40",
+    "preco": 749,
+    "imagem": "imagens/tenis/tenis/pegasus-40.png"
+  },
+  {
+    "nome": "gt-2160",
+    "preco": 699,
+    "imagem": "imagens/tenis/tenis/gt-2160.png"
+  },
+  {
+    "nome": "gel-nyc",
+    "preco": 649,
+    "imagem": "imagens/tenis/tenis/gel-nyc.png"
+  },
+  {
+    "nome": "japan-s",
+    "preco": 599,
+    "imagem": "imagens/tenis/tenis/japan-s.png"
+  },
+  {
+    "nome": "gel-nimbus-26",
+    "preco": 899,
+    "imagem": "imagens/tenis/tenis/gel-nimbus-26.png"
+  },
+  {
+    "nome": "nb-2002r",
+    "preco": 899,
+    "imagem": "imagens/tenis/tenis/nb-2002r.png"
+  },
+  {
+    "nome": "nb-1906r",
+    "preco": 849,
+    "imagem": "imagens/tenis/tenis/nb-1906r.png"
+  },
+  {
+    "nome": "nb-574",
+    "preco": 549,
+    "imagem": "imagens/tenis/tenis/nb-574.png"
+  },
+  {
+    "nome": "nb-990v6",
+    "preco": 1099,
+    "imagem": "imagens/tenis/tenis/nb-990v6.png"
+  },
+  {
+    "nome": "nb-8si27",
+    "preco": 799,
+    "imagem": "imagens/tenis/tenis/nb-8si27.png"
+  },
+  {
+    "nome": "puma-palermo",
+    "preco": 599,
+    "imagem": "imagens/tenis/tenis/puma-palermo.png"
+  },
+  {
+    "nome": "puma-mayze",
+    "preco": 549,
+    "imagem": "imagens/tenis/tenis/puma-mayze.png"
+  },
+  {
+    "nome": "puma-rs-x",
+    "preco": 649,
+    "imagem": "imagens/tenis/tenis/puma-rs-x.png"
+  },
+  {
+    "nome": "vans-knu-skool",
+    "preco": 449,
+    "imagem": "imagens/tenis/tenis/vans-knu-skool.png"
+  },
+  {
+    "nome": "vans-sk8-hi",
+    "preco": 449,
+    "imagem": "imagens/tenis/tenis/vans-sk8-hi.png"
+  },
+  {
+    "nome": "vans-authentic",
+    "preco": 349,
+    "imagem": "imagens/tenis/tenis/vans-authentic.png"
+  },
+  {
+    "nome": "vans-slip-on",
+    "preco": 349,
+    "imagem": "imagens/tenis/tenis/vans-slip-on.png"
+  },
+  {
+    "nome": "salomon-xt-6",
+    "preco": 899,
+    "imagem": "imagens/tenis/tenis/salomon-xt-6.png"
+  },
+  {
+    "nome": "veja-campo",
+    "preco": 699,
+    "imagem": "imagens/tenis/tenis/veja-campo.png"
+  },
+  {
+    "nome": "veja-esplar",
+    "preco": 649,
+    "imagem": "imagens/tenis/tenis/veja-esplar.png"
+  },
+  {
+    "nome": "veja-v-10",
+    "preco": 749,
+    "imagem": "imagens/tenis/tenis/veja-v-10.png"
+  },
+  {
+    "nome": "chucktaylor all star",
+    "preco": 399,
+    "imagem": "imagens/tenis/tenis/chuck-taylor-all-star.png"
+  },
+  {
+    "nome": "chuck-70-high",
+    "preco": 449,
+    "imagem": "imagens/tenis/tenis/chuck-70-high.png"
+  },
+  {
+    "nome": "run-star-hike",
+    "preco": 549,
+    "imagem": "imagens/tenis/tenis/run-star-hike.png"
+  },
+  {
+    "nome": "salomon-acs-pro",
+    "preco": 949,
+    "imagem": "imagens/tenis/tenis/salomon-acs-pro.png"
+  },
+  {
+    "nome": "on-cloud-5",
+    "preco": 899,
+    "imagem": "imagens/tenis/tenis/on-cloud-5.png"
+  },
+  {
+    "nome": "on-cloudmonster",
+    "preco": 999,
+    "imagem": "imagens/tenis/tenis/on-cloudmonster.png"
+  },
+  {
+    "nome": "hoka-clifton-9",
+    "preco": 849,
+    "imagem": "imagens/tenis/tenis/hoka-clifton-9.png"
+  },
+  {
+    "nome": "autry-medalist",
+    "preco": 699,
+    "imagem": "imagens/tenis/tenis/autry-medalist.png"
+  },
+  {
+    "nome": "oakley-teeth-1",
+    "preco": 549,
+    "imagem": "imagens/tenis/tenis/oakley-teeth-1.png"
+  },
+  {
+    "nome": "oakley-flak-3-5",
+    "preco": 599,
+    "imagem": "imagens/tenis/tenis/oakley-flak-3-5.png"
+  },
+  {
+    "nome": "hoka-bondi-8",
+    "preco": 899,
+    "imagem": "imagens/tenis/tenis/hoka-bondi-8.png"
+  },
+  {
+    "nome": "fila-disruptor-2",
+    "preco": 399,
+    "imagem": "imagens/tenis/tenis/fila-disruptor-2.png"
+  },
+  {
+    "nome": "reebok-club-c-85",
+    "preco": 449,
+    "imagem": "imagens/tenis/tenis/reebok-club-c-85.png"
+  },
+  {
+    "nome": "olympikus-corre-3",
+    "preco": 299,
+    "imagem": "imagens/tenis/tenis/olympikus-corre-3.png"
+  },
+  {
+    "nome": "mizuno wave 12",
+    "preco": 1099,
+    "imagem": "imagens/tenis/tenis/mizuno-wave-prophecy-12.png"
+  }
+]

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cadastro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menuLateral">
+        <div onclick="botaomenu()"><<</div>
+        <section>
+            <div id="home"><a href="menu.html">HOME</a></div>
+            <div id="cadastro"><a href="cadastro.html">CADASTRO</a></div>
+            <div id="carrinho"><a href="carrinho.html">CARRINHO</a></div>
+        </section>
+    </div>  
+    <div id="img">
+        <div id="menu" onclick="botaomenu()"></div>
+    </div>
+    </div>
+    <div id="principal">
+        <main>
+            <h1>cadastro</h1>
+            <form>
+                <label for="nome">nome:</label>
+                <input type="text" name="nome" id="nome" 
+                placeholder="nome" 
+                minlength="3" 
+                required>
+        
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" 
+                placeholder="email"
+                maxlength="100"
+                autocomplete="email"
+                required>
+                
+
+                <label for="password">password:</label>
+                <input type="password" name="password" id="password" placeholder="password"
+                minlength="8"
+                pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*" 
+                title="A senha deve ter pelo menos 8 caracteres, uma maiúscula, uma minúscula e um número."
+                required>
+            
+                <button type="submit" onclick="">entrar</button>
+            </form>
+            
+        </main>
+    </div>
+
+    <script>
+        function botaomenu(){
+            menuLateral = document.getElementById("menuLateral")
+            menu = document.getElementById("menu")
+            visivel = getComputedStyle(menuLateral).display
+
+            if( visivel == "block"){
+                menuLateral.style.display = "none"
+                menu.style.display = "block"
+            }else{
+                menuLateral.style.display = "block"
+                menu.style.display = "none"
+            }
+        }          
+    </script>
+</body>
+</html>

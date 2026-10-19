@@ -1,0 +1,139 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+}
+
+div#img {
+    height: 100vh;
+    flex: 1 ;
+    background: url(imagens/tenis/Gemini_Generated_Image_gzm6v6gzm6v6gzm6.jpg) center / cover  no-repeat;
+
+}
+div#img > div#menu{
+    width: clamp(80px, 100px, 110px);
+    height: 60px;
+    justify-content: end;
+    position: fixed;
+    background: url("imagens/588a64d2d06f6719692a2d0e.png") center / contain no-repeat;
+}   
+
+div#menu {
+    height: 100vh;
+    margin-left: auto;
+    position: absolute;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+body > div#menuLateral{
+    width: 130px;
+    height: 100%;
+    background-color: #f97316;
+    flex-shrink: 0;
+    display: none;
+    position: fixed;
+}
+body > div#menuLateral > a{
+    font-size: 30px;
+}
+
+div#principal{
+    height: 100vh;
+    background: linear-gradient(160deg, #133f69, #041320);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #262626;
+    color: white;
+    width: 80%;
+    height: auto ;
+    padding: 25px;
+    box-sizing: border-box;
+    align-content: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+form label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 0 5px;
+    opacity: 0;
+    transition: 0.2s;
+}
+form input::placeholder {
+    color: #777;
+}
+form input:focus::placeholder {
+    color: transparent;
+}
+form > div:focus-within label {
+    top: 0;
+    opacity: 1;
+    font-size: 12px;
+}
+
+input{
+    outline: none;
+    border: 2px solid rgb(21, 101, 121);
+}
+
+
+div:focus-within > label {
+    top: 0;
+    opacity: 1;
+}
+
+form button {
+    padding: 12px;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ea580c;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(0);
+}
